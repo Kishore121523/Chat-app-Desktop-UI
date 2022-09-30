@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+* a {
+  text-decoration: none;
+}
+* li {
+  list-style-type: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.left-gradient {
+  position: absolute;
+  top: 0;
+  left: -5.8rem;
+  height: 88vh;
+  width: 35vw;
+  border-radius: 0 0 50rem 50rem;
+  background-image: linear-gradient(hsl(293deg, 100%, 63%), hsl(264deg, 100%, 61%));
+  z-index: 0;
+}
+
+.right-gradient {
+  position: absolute;
+  bottom: 0;
+  right: -10rem;
+  height: 85vh;
+  width: 35vw;
+  border-radius: 50rem 50rem 0rem 0rem;
+  background: hsl(270deg, 20%, 96%);
+  z-index: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0rem 20rem;
+  padding-top: 8rem;
+  padding-right: 13rem;
+  gap: 2rem;
+}
+.container .container-left .mockup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 32.3rem;
+  width: 16rem;
+  background: white;
+  box-shadow: 23px 26px 63px -24px hsl(0deg, 1%, 67%);
+  border-radius: 30px;
+  margin-left: 2rem;
+  z-index: 1;
+}
+.container .container-left .mockup .mockup-inside {
+  display: flex;
+  height: 94%;
+  width: 90%;
+  border-radius: 25px;
+  background: hsl(270deg, 20%, 96%);
+  z-index: 2;
+}
+.container .container-left .mockup .mockup-inside .navBar {
+  position: absolute;
+  justify-self: center;
+  align-self: flex-start;
+  background-image: linear-gradient(270deg, hsl(293deg, 100%, 63%), hsl(264deg, 100%, 61%));
+  width: 90%;
+  height: 15%;
+  border-radius: 25px 25px 5px 5px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 20px;
+  padding-bottom: 15px;
+}
+.container .container-left .mockup .mockup-inside .navBar img {
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.container .container-left .mockup .mockup-inside .navBar .dots {
+  color: white;
+  margin-left: auto;
+  padding-bottom: 5px;
+}
+.container .container-left .mockup .mockup-inside .navBar .arrow {
+  color: white;
+  margin-right: auto;
+  padding-bottom: 3px;
+}
+.container .container-left .mockup .mockup-inside .navBar .info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 4px;
+  justify-self: center;
+  align-items: flex-start;
+  margin-right: 3rem;
+}
+.container .container-left .mockup .mockup-inside .navBar .info p {
+  font-size: 12px;
+  color: white;
+  padding-bottom: 2px;
+}
+.container .container-left .mockup .mockup-inside .navBar .info .available {
+  opacity: 50%;
+  font-size: 8px;
+}
+.container .container-left .mockup .mockup-inside .mockup-notch {
+  position: absolute;
+  width: 90%;
+  height: 20px;
+  background: transparent;
+  z-index: 5;
+}
+.container .container-left .mockup .mockup-inside .mockup-notch .notch {
+  background: rgb(255, 255, 255);
+  width: 50%;
+  height: 1.5rem;
+  margin: auto;
+  border-radius: 0 0 12px 12px;
+  z-index: 6;
+  margin-top: -5px;
+}
+.container .container-left .mockup .mockup-inside .messages {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 5rem;
+  padding: 10px;
+}
+.container .container-left .mockup .mockup-inside .messages .msg1 {
+  background: hsl(278deg, 100%, 95%);
+  margin-bottom: 0.6rem;
+  justify-self: flex-start;
+  width: 10rem;
+  height: auto;
+  border-radius: 10px;
+  padding: 8px;
+  z-index: 2;
+  font-size: 8px;
+  color: hsl(276deg, 55%, 52%);
+}
+.container .container-left .mockup .mockup-inside .messages .msg2,
+.container .container-left .mockup .mockup-inside .messages .msg3 {
+  background: white;
+  margin-bottom: 0.6rem;
+  justify-self: flex-start;
+  max-width: 10rem;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 3rem;
+  padding: 8px;
+  z-index: 2;
+  font-size: 8px;
+  color: hsl(271deg, 15%, 43%);
+}
+.container .container-left .mockup .mockup-inside .messages .msg3 {
+  margin-left: 7rem;
+}
+.container .container-left .mockup .mockup-inside .messages .msg4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(90deg, hsl(293deg, 100%, 63%), hsl(264deg, 100%, 61%));
+  margin-bottom: 0.6rem;
+  justify-self: flex-start;
+  width: 10rem;
+  height: auto;
+  border-radius: 10px 10px 10px 2px;
+  padding: 10px 16px;
+  z-index: 2;
+  font-size: 8px;
+  color: white;
+}
+.container .container-left .mockup .mockup-inside .messages .msg4 .right {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.container .container-left .mockup .mockup-inside .messages .pictures {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  justify-self: flex-start;
+  margin-left: 4rem;
+  gap: 0.7rem;
+  width: 13rem;
+  margin-bottom: 0.6rem;
+}
+.container .container-left .mockup .mockup-inside .messages .pictures img {
+  border-radius: 8px;
+  height: 2.5rem;
+}
+.container .container-left .mockup .mockup-inside .sendMessage {
+  margin-left: 0.3rem;
+  margin-top: 0.3rem;
+  justify-self: center;
+  align-self: flex-start;
+  bottom: 2rem;
+  background: white;
+  width: 75%;
+  height: 2rem;
+  border-radius: 20px;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container .container-left .mockup .mockup-inside .sendMessage .sendMessageIcon {
+  margin-right: 4px;
+  background: hsl(271deg, 36%, 24%);
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .container-left .mockup .mockup-inside .sendMessage .sendMessageIcon i {
+  color: white;
+}
+.container .container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  justify-self: flex-end;
+  max-width: 60vw;
+  padding: 4rem;
+  padding-left: 7rem;
+  z-index: 1;
+}
+.container .container-right h2 {
+  color: hsl(271deg, 36%, 24%);
+  padding-bottom: 1.3rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.container .container-right p {
+  color: hsl(270deg, 7%, 64%);
+  line-height: 1.8rem;
+  font-size: 16px;
+}/*# sourceMappingURL=styles.css.map */
